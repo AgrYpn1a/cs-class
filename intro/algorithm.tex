@@ -1,0 +1,69 @@
+\documentclass{beamer}
+
+% ako se sledeca komanda izostavi, bice upotrebljena default tema
+\usetheme{Warsaw}
+
+% Packages
+\usepackage{listings}
+
+\title{Introduction To Programming}
+\subtitle{Algorithms}
+\author{Rastko Tojagi\'c}
+\institute{%
+    CS Class
+}
+\date{}
+
+\newcommand{\bfemph}[1]{\textbf{#1}}
+\renewcommand{\emph}[1]{\bfemph{#1}}
+
+\begin{document}
+
+\begin{frame}
+   \titlepage
+\end{frame}
+
+\begin{frame}{Introduction}
+
+    Simple pancakes recipe
+
+    \bigskip
+
+    \begin{itemize}
+        \item Sift together the flour, baking powder, salt and sugar
+        \pause
+        \item Pour in milk, an egg and some melted butter
+        \pause
+        \item Mix together
+        \pause
+        \item \emph{If} mixture is too dense, add more milk 
+        \pause
+        \item Mix \emph{until} smooth
+        \pause
+        \item Pour in the pan and bake the pancakes
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]{Introduction}
+\begin{columns}
+    \column{0.5\textwidth}
+    \emph{Branching}
+        \begin{verbatim}
+            if too_dense then
+                add_milk
+        \end{verbatim}
+
+    
+    \column{0.5\textwidth}
+        \emph{Looping}
+        \begin{verbatim}
+            repeat
+                mix_together
+            until smooth
+        \end{verbatim}
+\end{columns}        
+
+\end{frame}
+
+\end{document}
