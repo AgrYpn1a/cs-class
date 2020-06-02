@@ -1,0 +1,70 @@
+\documentclass{exam}
+
+% ### Packages ####
+\usepackage[utf8]{inputenc}
+
+\newcommand{\bfemph}[1]{\textbf{#1}}
+\renewcommand{\emph}[1]{\bfemph{#1}}
+
+\begin{document}
+
+% title
+\normalsize
+\textsf{THEME} \large Algorithms
+\hfill
+Beginner
+
+\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
+
+\bigskip
+\huge
+\noindent
+\textsf{Arrays}
+
+\bigskip
+
+\Large
+\noindent
+Solve the problems using C\#.
+
+\bigskip
+
+\noindent
+The array created in the problem 1 should be used when solving following problems, if not stated otherwise. 
+
+\vspace{5mm}
+
+\large
+\begin{questions}
+    \question Write a program that asks the user for a natural number $n$. 
+    Create a new \emph{array} of the length $n$ that contains random generated numbers.
+    
+    To generate a random integer use
+    \begin{verbatim}
+        Random r = new Random();
+        int myNumber = r.Next(10);
+    \end{verbatim}
+    Assume that the input is a number, but make sure that it is a natural number $> 1$.
+
+    \question Define a method called \emph{Sum} that takes an array of integers as an input parameter
+    and returns the sum of the array. Apply the method to the array and print the output.
+
+    \question Define a method called \emph{Product} that takes an array of integers as an input parameter
+    and returns the product of the array. Apply the method to the array and print the output.
+
+    \question Define a method called \emph{SumEven} that takes an array of integers as an input parameter
+    and returns the sum of the elements on the even positions in the array. Apply the method to the array and print the output.
+
+    \question Define a method called \emph{SumOdd} that takes an array of integers as an input parameter
+    and returns the sum of the elements on the odd positions in the array. Apply the method to the array and print the output.
+
+    \question Define a method called \emph{SumGrFive} that takes an array of integers as an input parameter
+    and returns the sum of the elements that are $\geq 5$. Apply the method to the array and print the output.
+
+    \question Define a method called \emph{SumGrThanX} that modifies the previous method by adding another integer parameter \emph{x}. 
+    Method should return the sum of all elements that are greater than given x. This method is a generalization of the
+    previous one. Apply the method to the array and print the output.
+
+\end{questions}
+
+\end{document}

@@ -1,0 +1,74 @@
+\documentclass{exam}
+
+% ### Packages ####
+\usepackage[utf8]{inputenc}
+
+\newcommand{\bfemph}[1]{\textbf{#1}}
+\renewcommand{\emph}[1]{\bfemph{#1}}
+
+\begin{document}
+
+% title
+\normalsize
+\textsf{How do I?}
+\hfill
+Variables, IO, Arrays
+
+\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
+
+\bigskip
+\huge
+\noindent
+\textsf{How do I?}
+
+% Reset font size
+\large
+
+\tableofcontents
+
+\bigskip
+
+
+\section{Basics}
+\subsection{How do I: First program}
+First create a file called \emph{Main.cs} and make sure to have the following in the file
+\begin{verbatim}
+    class Main
+    {
+        static void Main(string[] args) 
+        {
+
+        }
+    }
+\end{verbatim}
+If you wish to give a different name to the file, then make sure to put that name instead of \emph{Main}
+after the \emph{class} keyword.
+\bigskip
+
+\subsection{How do I: Use a variable}
+Using variables is one of the main concepts of programming. Variables are used to store
+data. There are different types of variables used for storing different kinds of data.
+
+\begin{verbatim}
+    int a = 5; // Integer
+    double b = 3.2; // Decimal
+    char ch = 'r'; // A single character, single quotes '
+    string str = "Hello World"; // Array of characters - string, double quotes "
+
+    int[] arr = new int[5]; // Defines an array of ints, of size 5
+    int[] arr2 = new int[a]; // We can also use prev defined variable for size 
+\end{verbatim}
+
+\section{IO Operations}
+Standard input and output (STD in, STD out) are the ways to communicate with the program
+through the console window.
+
+\subsection{Printing to STD out}
+
+\subsection{Reading from STD in}
+
+\vspace{5mm}
+
+\large
+
+\end{document}
